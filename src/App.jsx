@@ -49,12 +49,7 @@ function App() {
       <div className='relative w-[86%] py-[50px] pb-[60px] overflow-x-hidden h-[100vh] bg-gray-300  text-black  dark:bg-slate-800 dark:text-white'  style={{
             /* Hide the scrollbar */
             scrollbarWidth: 'none', /* Firefox */
-            msOverflowStyle: 'none', /* Internet Explorer 10+ */
-        
-            /* Hide the scrollbar for WebKit browsers */
-            '&::-webkit-scrollbar': {
-                display: 'none'
-            }
+          
         }}>
         <div>
           <Navbar className=""  showMenu={showMenu}/>
