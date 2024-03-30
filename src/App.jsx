@@ -8,6 +8,7 @@ import { RiContactsBookFill } from "react-icons/ri";
 import Sidebar from './components/Sidebar/Sidebar';
 import { Outlet } from 'react-router-dom';
 import { useState } from 'react';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -75,7 +76,10 @@ function App() {
             <Outlet/>
           </div>
         </div>
-
+       
+        <div className='flex items-center justify-center'>
+        <Footer/>
+        </div>
       </div>
     </div>
 
