@@ -30,13 +30,8 @@ const imgsdata = [
     },
     {
         imgsrc:"https://cdn.pixabay.com/photo/2014/09/23/09/02/abstract-457345_640.png"
-    },
-    {
-        imgsrc:"https://cdn.pixabay.com/photo/2023/07/04/07/25/self-consciousness-8105584_640.jpg",
-    },
-    {
-        imgsrc:"https://cdn.pixabay.com/photo/2023/07/04/07/25/self-consciousness-8105584_640.jpg",
     }
+   
 ]
   return (
 

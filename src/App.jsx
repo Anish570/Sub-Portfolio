@@ -45,8 +45,8 @@ function App() {
   console.log("data in setIsMenuOpen",setIsMenuOpen)
   const className= {};
   return (
-    <div className="w-full flex justify-center ">
-      <div className='relative w-[86%] py-[50px] pb-[60px] overflow-x-hidden h-[100vh] bg-gray-300  text-black  dark:bg-slate-800 dark:text-white'  style={{
+    <div className="w-full bg-gradient-to-br from-purple-200 to-sky-200 dark:bg-gradient-to-br dark:from-purple-500 dark:to-pink-500 flex justify-center ">
+      <div className='relative w-[86%] py-[50px] pb-[60px] overflow-x-hidden h-[100vh] text-black dark:text-white'  style={{
             /* Hide the scrollbar */
             scrollbarWidth: 'none', /* Firefox */
           
