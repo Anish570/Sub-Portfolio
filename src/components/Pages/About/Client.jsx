@@ -35,11 +35,11 @@ const imgsdata = [
 ]
   return (
 
-    <div className='absolute left-0 '>
+    <div className='md:absolute md:left-0 '>
     <div className="w-[825px] h-[253px] bg-[#f8fbfb] text-[#44566c] dark:bg-[#0d0d0d] dark:text-gray-400 flex flex-col gap-4 items-center justify-center leading-[7px] py-[45px] px-[60px] pb-[60px]">
-    <div className="text-black dark:text-white text-[24px] font-medium place-self-auto leading-[36px] text-center capitalize">
-Client
-</div>
+    <div className="text-black dark:text-white text-[24px] font-medium flex leading-[36px] items-center capitalize">
+        Client
+        </div>
 
 <div className=" w-[705px] h-[95px] flex  gap-5 overflow-x-scroll scrollbar-hide scroll-smooth">
 

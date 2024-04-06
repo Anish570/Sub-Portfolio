@@ -2,7 +2,7 @@ import React from 'react'
 
 const DataCard = ({data}) => {
   return (
-    <div className=" w-[90%] md:w-[338px] md:h-[200px] border border-solid
+    <div className="w-[50%] md:w-[338px] md:h-[200px] border border-solid
      border-[#353535] rounded-lg text-gray-400 flex gap-[20px] grid-area-auto leading-[28px]
       mb-[30px] p-[20px] ">
         <div>
