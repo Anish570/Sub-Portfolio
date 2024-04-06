@@ -27,7 +27,7 @@ const Info = () => {
 }
   ]
   return (
-<div className='w-[225px] h-[303px] bg-[#f3f6f6] dark:bg-[#1d1d1d] dark:text-[#a6a6a6] rounded-[16px] text-[#44566c] my-0 mb-[30px] place-self-auto line-height-[28px] py-[20px] px-[15px] text-left'>
+<div className='w-[334px] md:w-[225px] h-[303px] bg-[#f3f6f6] dark:bg-[#1d1d1d] dark:text-[#a6a6a6] rounded-[16px] text-[#44566c] my-0 mb-[30px] place-self-auto line-height-[28px] py-[20px] px-[15px] text-left'>
         {
           infodata.map((item,index)=>(
             <div key={index} className='flex items-center gap-[10px] place-self-auto line-height-[28px] py-[10px] text-left text-[#a6a6a6]'>

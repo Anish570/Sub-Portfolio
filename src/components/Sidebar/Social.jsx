@@ -29,10 +29,10 @@ const Social = () => {
     },
   ]
   return (
-    <div className='my-3  w-full flex items-center gap-3 justify-center'>
+    <div className='my-3 w-[230px] md:w-full flex items-center gap-3 justify-center'>
       {
         socialdata.map((item,index)=>(
-            <div className={`bg-[#f3f6f6] dark:bg-[#1d1d1d] ${item.class} hover:text-white text-[18px] rounded-lg p-2 hover:bg-blue-600 dark:hover:bg-blue-600` } key={index}> {item.icon} </div>
+            <div className={`w-[40px] h-[40px] flex items-center justify-center bg-[#f3f6f6] dark:bg-[#1d1d1d] ${item.class} hover:text-white text-[18px] rounded-lg p-2 hover:bg-blue-600 dark:hover:bg-blue-600` } key={index}> {item.icon} </div>
         ))
       }
     </div>
