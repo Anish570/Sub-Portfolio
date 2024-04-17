@@ -9,55 +9,57 @@ import Client from './Client';
 const About = () => {
   const carddata = [
     {
-        icon:<IoLibrary/>,
-        title:"Ui/Ux Design",
-        desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."
+      icon: <IoLibrary />,
+      title: "Ui/Ux Design",
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."
     },
     {
-      icon:<RiFlutterFill/>,
-      title:"App Development",
+      icon: <RiFlutterFill />,
+      title: "App Development",
       desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."
-  },
-  {
-    icon:<GrCodeSandbox/>,
-    title:"Software Development",
-    desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."
-},
-{
-  icon:<RiCodeSSlashFill/>,
-  title:"Web Development",
-  desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."
-}
+    },
+    {
+      icon: <GrCodeSandbox />,
+      title: "Software Development",
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."
+    },
+    {
+      icon: <RiCodeSSlashFill />,
+      title: "Web Development",
+      desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."
+    }
   ]
   return (
-    <div className='relative py-[30px] px-[30px] md:py-[50px] md:px-[60px]'>
-      <h2 className="text-black dark:text-white  text-[36px] font-bold leading-[54px] my-0 mb-[15px] capitalize">
-        About
-    </h2>
-    <p className='mb-[16px]'>
-    I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
-    </p>
-    <p className='mb-[16px]'>
-    My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
-    </p>
-    
-    <div className="mb-[10px] w-[825px] h-[526px] text-gray-400 place-self-auto leading-[28px]" style={{ color: '#a6a6a6', }}>
-    <h3 className="text-black dark:text-white  text-[24px] font-medium leading-[36px] capitalize">
-      What I Do!
-    </h3>
-     <div className='md:w-[750px] md:h-[490px] '>
-         <div className='py-2 md:px-[0px] w-[100%] md:w-[740px] md:h-[490px] flex flex-wrap gap-[6px] md:gap-[25px] '>
-         {carddata.map((item,index)=>(
-        <DataCard key={index} data={item}/>
-      ))}
-         </div>
-     </div>
-     </div>
+    <div className='w-full relative p-[30px] sm:py-[50px] sm:px-[60px]'>
+      <div className='flex flex-col sm:flex-row items-center'>
+        <h2 className="text-black dark:text-white  text-[36px]  font-bold leading-[54px] my-0 mb-[15px] capitalize">
+          About
+        </h2>
+        <p className='mb-[16px]'>
+          I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+        </p>
+        <p className='mb-[16px]'>
+          My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+        </p>
+      </div>
 
-    <div className='absolute flex items-center justify-center w-[90%] left-0 mt-[300px] md:mt-[130px]'>
-    <Client/>
-    </div>
-     
+      <div className="flex flex-col items-center mb-[10px] min-w-90% sm:w-[825px] h-[526px] text-gray-400 place-self-auto leading-[28px]" style={{ color: '#a6a6a6', }}>
+        <h3 className="text-black dark:text-white  text-[24px] font-medium leading-[36px] capitalize">
+          What I Do!
+        </h3>
+        <div className='min-w-[100%] sm:w-[750px] sm:h-[490px] '>
+          <div className='py-2 md:px-[0px] min-w-[100%] md:w-[740px] md:h-[490px] flex flex-wrap gap-[6px] md:gap-[25px] '>
+            {carddata.map((item, index) => (
+              <DataCard key={index} data={item} />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className='absolute flex items-center justify-center w-[90%] left-0 mt-[300px] md:mt-[130px]'>
+        <Client />
+      </div>
+
     </div>
   )
 }

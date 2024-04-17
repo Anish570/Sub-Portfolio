@@ -39,23 +39,23 @@ function App() {
       hrefto: "contact"
     }
   ]
-  const [isMenuOpen,setIsMenuOpen]=useState(false)
-  const showMenu = (data)=>{
-        setIsMenuOpen(data)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const showMenu = (data) => {
+    setIsMenuOpen(data)
   }
-  console.log("data in setIsMenuOpen",setIsMenuOpen)
-  const className= {};
+  console.log("data in setIsMenuOpen", setIsMenuOpen)
+  const className = {};
   return (
     <div className="w-full bg-gradient-to-br from-purple-200 to-sky-200 dark:bg-gradient-to-br dark:from-purple-500 dark:to-pink-500 flex justify-center ">
-      <div className=' w-[95%] md:w-[86%] py-[50px] pb-[60px] overflow-x-hidden  md:h-[100vh] text-black dark:text-white'  style={{
-            /* Hide the scrollbar */
-            scrollbarWidth: 'none', /* Firefox */
-          
-        }}>
-        <div>
-          <Navbar className=""  showMenu={showMenu}/>
+      <div className=' w-[95%] md:w-[86%] py-[50px] pb-[60px] overflow-x-hidden  md:h-[100vh] text-black dark:text-white' style={{
+        /* Hide the scrollbar */
+        scrollbarWidth: 'none', /* Firefox */
 
-          <div className={`${isMenuOpen? "block h-[230px]  ": "hidden h-[-230px]"} top-[15%] transition-all ease-linear duration-[0.5s] absolute z-[11]  w-full mt-[20px] bg-gray-300 text-black pl-16 
+      }}>
+        <div>
+          <Navbar className="" showMenu={showMenu} />
+
+          <div className={`${isMenuOpen ? "block h-[230px]  " : "hidden h-[-230px]"} top-[15%] transition-all ease-linear duration-[0.5s] absolute z-[11]  w-full mt-[20px] bg-gray-300 text-black pl-16 
           rounded-[12px] shadow-[#ededed] 
             text-[28px] py-[20px]
            dark:bg-[#1d1d1d] dark:text-[#a6a6a6]`}>
@@ -66,21 +66,21 @@ function App() {
             }
           </div>
         </div>
-        
+
         <div className='flex items-center flex-wrap gap-8 justify-center mt-16'>
-          <Sidebar/>
-          <div className='w-[95%] h-[1480px] md:w-[70%] md:h-[750px] rounded-[15px]
+          <Sidebar />
+          <div className='min-w-[95%] h-[1480px] sm:w-[70%] sm:h-[750px] rounded-[15px]
            bg-white relative text-black dark:bg-black dark:text-white 
-           overflow-hidden  md:overflow-x-hidden md:overflow-y-scroll ' 
-           style={{
-            scrollbarWidth: 'none',
-        }}>
-            <Outlet/>
+           overflow-hidden  sm:overflow-x-hidden sm:overflow-y-scroll '
+            style={{
+              scrollbarWidth: 'none',
+            }}>
+            <Outlet />
           </div>
         </div>
-       
+
         <div className='flex items-center justify-center'>
-        <Footer/>
+          <Footer />
         </div>
       </div>
     </div>
