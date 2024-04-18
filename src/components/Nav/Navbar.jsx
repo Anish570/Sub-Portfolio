@@ -2,7 +2,7 @@ import React from 'react'
 import ThemeToggle from './ThemeToggle'
 import MenuHamburger from './MenuHamburger'
 
-const Navbar = ({ className, showMenu }) => {
+const Navbar = ({ className, showMenu, isMenuOpen }) => {
   return (
     <div className={` flex items-center  justify-between ${className}`}>
       <div>
@@ -10,10 +10,8 @@ const Navbar = ({ className, showMenu }) => {
       </div>
       <div className={`w-[40%] sm:w-[20%] flex items-center justify-end`}>
         <ThemeToggle />
-        <MenuHamburger showMenu={showMenu} />
-        {
-          console.log("what's in onclick props", showMenu)
-        }
+        <MenuHamburger showMenu={showMenu} isMenuOpen={isMenuOpen} />
+
       </div>
     </div>
   )

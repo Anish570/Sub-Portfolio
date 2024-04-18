@@ -43,6 +43,9 @@ function App() {
   const showMenu = (data) => {
     setIsMenuOpen(data)
   }
+  const onClose = () => {
+    setIsMenuOpen(false)
+  }
   console.log("data in setIsMenuOpen", setIsMenuOpen)
   const className = {};
   return (
@@ -53,15 +56,15 @@ function App() {
 
       }}>
         <div>
-          <Navbar className="mt-[10px] sm:mt-[0px]" showMenu={showMenu} />
+          <Navbar className="mt-[10px] sm:mt-[0px]" showMenu={showMenu} isMenuOpen={isMenuOpen} />
 
-          <div className={`${isMenuOpen ? "block h-[230px]  " : "hidden h-[-230px]"} top-[15%] transition-all ease-linear duration-[0.5s] absolute z-[11]  w-full mt-[20px] bg-gray-300 text-black pl-16 
+          <div className={`${isMenuOpen ? "  " : "hidden "} w-[95%] top-[20%] transition-all ease-linear duration-[0.5s] absolute z-[11]  bg-gray-300 text-black pl-16 
           rounded-[12px] shadow-[#ededed] 
-            text-[28px] py-[20px]
+            text-[28px] sm:py-[20px]
            dark:bg-[#1d1d1d] dark:text-[#a6a6a6]`}>
             {
               menuItems.map((item, index) => (
-                <MenuItems key={index} data={item} />
+                <MenuItems key={index} data={item} onClose={onClose} />
               ))
             }
           </div>
