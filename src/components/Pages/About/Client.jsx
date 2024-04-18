@@ -33,12 +33,12 @@ const Client = () => {
     return (
 
         <>
-            <div className="w-full sm:pb-[20px] pt-[10px] text-[#44566c] dark:bg-[#0d0d0d] dark:text-gray-400">
+            <div className="w-full sm:pb-[20px] px-[5px] pt-[10px] text-[#44566c] dark:bg-[#0d0d0d] dark:text-gray-400">
                 <div className="text-black  dark:text-white text-[18px] sm:text-[24px] text-center font-medium">
                     Client
                 </div>
                 {/*   */}
-                <div className="sm:h-[95px] flex sm:px-[30px] py-4 sm:gap-5 overflow-x-auto scrollbar-hide scroll-smooth">
+                <div className=" sm:h-[95px] flex sm:px-[30px] py-4  sm:gap-5 overflow-x-auto scrollbar-hide scroll-smooth">
                     {
                         imgsdata.map((item, index) => (
                             <div key={index} className="min-w-[30px] min-h-[30px] sm:min-h-[70px] sm:min-w-[70px] mx-[13px] sm:mx-[25px] " >
