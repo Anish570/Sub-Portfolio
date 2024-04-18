@@ -11,9 +11,6 @@ const Client = () => {
             imgsrc: "https://cdn.pixabay.com/photo/2015/02/02/23/58/sign-621746_640.png",
         },
         {
-            imgsrc: "https://cdn.pixabay.com/photo/2016/11/07/13/04/yoga-1805784_640.png",
-        },
-        {
             imgsrc: "https://cdn.pixabay.com/photo/2014/04/02/10/47/red-304573_640.png",
         },
         {
@@ -34,20 +31,18 @@ const Client = () => {
 
     ]
     return (
-        // bg-[#f8fbfb]
+
         <>
-            <div className="space-y-[30px] w-[110%] h-[220px] bg-red-800  text-[#44566c] dark:bg-[#0d0d0d] dark:text-gray-400">
-                <div className="text-black dark:text-white text-[24px] text-center font-medium">
+            <div className="w-full sm:pb-[20px] pt-[10px] text-[#44566c] dark:bg-[#0d0d0d] dark:text-gray-400">
+                <div className="text-black  dark:text-white text-[18px] sm:text-[24px] text-center font-medium">
                     Client
                 </div>
                 {/*   */}
-                <div className="w-[100%] h-[95px] flex px-[30px] gap-5 overflow-x-auto scrollbar-hide scroll-smooth">
-
+                <div className="sm:h-[95px] flex sm:px-[30px] py-4 sm:gap-5 overflow-x-auto scrollbar-hide scroll-smooth">
                     {
                         imgsdata.map((item, index) => (
-                            //  text-center overflow-hidden  object-contain
-                            <div key={index} className="img md:min-h-[95px] md:min-w-[95px]  px-[12px] " >
-                                <img src={item.imgsrc} alt="" className='min-w-[65px] min-h-[55px] md:min-h-[95px] md:min-w-[85px] ' />
+                            <div key={index} className="min-w-[30px] min-h-[30px] sm:min-h-[70px] sm:min-w-[70px] mx-[13px] sm:mx-[25px] " >
+                                <img src={item.imgsrc} alt="" className='' />
                             </div>
                         ))
                     }
@@ -55,7 +50,7 @@ const Client = () => {
                 </div>
 
             </div>
-            <div className='mt-[20px] flex items-center justify-center bg-white dark:text-white dark:bg-black  text-black'>
+            <div className='m-[20px] text-center text-[12px] sm:text-[16px] bg-white dark:text-white dark:bg-black  text-black'>
                 <span>
                     © 2024 All Rights Reserved by Anishgtm.
                 </span>

@@ -67,14 +67,14 @@ function App() {
           </div>
         </div>
 
-        <div className='flex flex-col sm:flex-row sm:justify-center w-full px-[20px] sm:px-[50px] gap-4 my-8 sm:mb-0 sm:mt-16'>
+        <div className='flex flex-col sm:flex-row sm:justify-center w-full px-[10px] sm:px-[50px] gap-4 my-8 sm:mb-0 sm:mt-16'>
           <div className='min-w-[90%] sm:h-full sm:min-w-[25%] h-full 
            bg-white text-black overflow-hidden
             dark:text-white dark:bg-black  rounded-[14px]'>
             <Sidebar />
           </div>
-          <div className='min-w-[90%]  sm:min-w-[75%] sm:h-[750px] rounded-[15px]
-           bg-white relative text-black dark:bg-black dark:text-white 
+          <div className='w-[100%] sm:min-w-[75%] sm:h-[750px] rounded-[15px]
+           bg-white  text-black dark:bg-black dark:text-white 
            overflow-hidden scrollbar-hide sm:overflow-x-hidden sm:overflow-y-scroll '
             style={{
               scrollbarWidth: 'none',

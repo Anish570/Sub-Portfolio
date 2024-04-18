@@ -30,33 +30,33 @@ const About = () => {
     }
   ]
   return (
-    <div className='w-full h-fit p-[30px] sm:py-[50px] sm:px-[60px]'>
-      <div className='flex flex-col sm:flex-row items-center'>
-        <h2 className="text-black dark:text-white  text-[36px]  font-bold leading-[54px] my-0 mb-[15px] capitalize">
-          About
-        </h2>
-        <p className='mb-[16px]'>
-          I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
-        </p>
-        <p className='mb-[16px]'>
-          My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
-        </p>
-      </div>
+    <div className='w-full'>
+      <div className='w-full p-[10px]  sm:pt-[30px] sm:px-[60px]'>
+        <div className='flex flex-col items-center '>
+          <h2 className="text-black dark:text-white text-[26px] sm:text-[36px]  font-bold  my-1 sm:my-0 sm:mb-[15px] capitalize">
+            About
+          </h2>
+          <p className='text-[12px] sm:text-[15px] sm:font-[500] mb-[16px]'>
+            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+          </p>
+          <p className='text-[12px] sm:text-[15px] sm:font-[500]  mb-[16px]'>
+            My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+          </p>
+        </div>
 
-      <div className="flex flex-col items-center mb-[10px] min-w-90% sm:w-[825px] h-[526px] text-gray-400 place-self-auto leading-[28px]" style={{ color: '#a6a6a6', }}>
-        <h3 className="text-black dark:text-white  text-[24px] font-medium leading-[36px] capitalize">
-          What I Do!
-        </h3>
-        <div className='min-w-[100%] sm:w-[750px] sm:h-[490px] '>
-          <div className='py-2 md:px-[0px] min-w-[100%] md:w-[740px] md:h-[490px] flex flex-wrap gap-[6px] md:gap-[25px] '>
+        <div className="flex flex-col items-center mb-[10px] w-[100%] sm:w-[100%]  text-gray-400" style={{ color: '#a6a6a6', }}>
+          <h3 className="text-black dark:text-white  text-[24px] font-medium leading-[36px] capitalize">
+            What I Do!
+          </h3>
+
+          <div className='mt-[10px]'>
             {carddata.map((item, index) => (
               <DataCard key={index} data={item} />
             ))}
           </div>
         </div>
       </div>
-
-      <div className='w-[100%] mt-[300px] md:mt-[130px]'>
+      <div className=''>
         <Client />
       </div>
 

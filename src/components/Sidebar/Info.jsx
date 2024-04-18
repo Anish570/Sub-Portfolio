@@ -27,11 +27,11 @@ const Info = () => {
     }
   ]
   return (
-    <div className='w-[95%] md:w-[90%] bg-[#f3f6f6] dark:bg-[#1d1d1d] dark:text-[#a6a6a6] rounded-[16px] text-[#44566c] my-0 mb-[30px] py-[20px] px-[15px] text-left'>
+    <div className='w-[95%] md:w-[90%] bg-[#f3f6f6] dark:bg-[#1d1d1d] dark:text-[#a6a6a6] rounded-[16px] text-[#44566c] my-0 mb-[30px] sm:py-[20px] px-[15px] text-left'>
       {
         infodata.map((item, index) => (
-          <div key={index} className='flex items-center gap-[10px] place-self-auto line-height-[28px] py-[10px] text-left text-[#a6a6a6]'>
-            <div className='inline-block grid-area-auto text-[#e93b81] text-center text-[22px] line-height-[22px]'>
+          <div key={index} className='flex  sm:justify-start sm:items-center gap-[10px] sm:py-[10px] text-left text-[#a6a6a6]'>
+            <div className=' text-[#e93b81] flex items-center text-[22px] '>
               {item.icon}
             </div>
             <div>
