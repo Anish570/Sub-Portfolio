@@ -53,7 +53,7 @@ function App() {
 
       }}>
         <div>
-          <Navbar className="" showMenu={showMenu} />
+          <Navbar className="mt-[10px] sm:mt-[0px]" showMenu={showMenu} />
 
           <div className={`${isMenuOpen ? "block h-[230px]  " : "hidden h-[-230px]"} top-[15%] transition-all ease-linear duration-[0.5s] absolute z-[11]  w-full mt-[20px] bg-gray-300 text-black pl-16 
           rounded-[12px] shadow-[#ededed] 
