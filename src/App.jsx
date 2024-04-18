@@ -47,7 +47,7 @@ function App() {
   const className = {};
   return (
     <div className="w-full bg-gradient-to-br from-purple-200 to-sky-200 dark:bg-gradient-to-br dark:from-purple-500 dark:to-pink-500 flex justify-center ">
-      <div className=' w-[95%] md:w-[86%] py-[50px] pb-[60px] overflow-x-hidden  md:h-[100vh] text-black dark:text-white' style={{
+      <div className=' w-[95%] sm:w-[100%] sm:p-[50px] pb-[60px] overflow-x-hidden  md:h-[100vh] text-black dark:text-white' style={{
         /* Hide the scrollbar */
         scrollbarWidth: 'none', /* Firefox */
 
@@ -67,11 +67,15 @@ function App() {
           </div>
         </div>
 
-        <div className='flex items-center flex-wrap gap-8 justify-center mt-16'>
-          <Sidebar />
-          <div className='min-w-[95%] h-[1480px] sm:w-[70%] sm:h-[750px] rounded-[15px]
+        <div className='flex flex-col sm:flex-row sm:justify-center w-full px-[20px] sm:px-[50px] gap-4 my-8 sm:mb-0 sm:mt-16'>
+          <div className='min-w-[90%] sm:h-full sm:min-w-[25%] h-full 
+           bg-white text-black overflow-hidden
+            dark:text-white dark:bg-black  rounded-[14px]'>
+            <Sidebar />
+          </div>
+          <div className='min-w-[90%]  sm:min-w-[75%] sm:h-[750px] rounded-[15px]
            bg-white relative text-black dark:bg-black dark:text-white 
-           overflow-hidden  sm:overflow-x-hidden sm:overflow-y-scroll '
+           overflow-hidden scrollbar-hide sm:overflow-x-hidden sm:overflow-y-scroll '
             style={{
               scrollbarWidth: 'none',
             }}>

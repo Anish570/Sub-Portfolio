@@ -30,7 +30,7 @@ const About = () => {
     }
   ]
   return (
-    <div className='w-full relative p-[30px] sm:py-[50px] sm:px-[60px]'>
+    <div className='w-full h-fit p-[30px] sm:py-[50px] sm:px-[60px]'>
       <div className='flex flex-col sm:flex-row items-center'>
         <h2 className="text-black dark:text-white  text-[36px]  font-bold leading-[54px] my-0 mb-[15px] capitalize">
           About
@@ -56,7 +56,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='absolute flex items-center justify-center w-[90%] left-0 mt-[300px] md:mt-[130px]'>
+      <div className='w-[100%] mt-[300px] md:mt-[130px]'>
         <Client />
       </div>
 

@@ -6,33 +6,33 @@ import { TbBrandLinkedin } from "react-icons/tb";
 
 
 const Social = () => {
-  const socialdata= [
+  const socialdata = [
     {
-      icon: <FaFacebookF/>,
-      link:"www.facebook.com",
-      class:"text-blue-500"
+      icon: <FaFacebookF />,
+      link: "www.facebook.com",
+      class: "text-blue-500"
     },
     {
-      icon: <FaXTwitter/>,
-      link:"www.twitter.com",
-      class:"text-black dark:text-white "
+      icon: <FaXTwitter />,
+      link: "www.twitter.com",
+      class: "text-black dark:text-white "
     },
     {
-      icon: <FaInstagram/>,
-      link:"www.instagram.com",
-      class:"text-pink-600"
+      icon: <FaInstagram />,
+      link: "www.instagram.com",
+      class: "text-pink-600"
     },
     {
-      icon: <TbBrandLinkedin/>,
-      link:"www.linkedin.com",
-      class:"text-blue-500"
+      icon: <TbBrandLinkedin />,
+      link: "www.linkedin.com",
+      class: "text-blue-500"
     },
   ]
   return (
-    <div className='my-3 w-[230px] md:w-full flex items-center gap-3 justify-center'>
+    <div className='my-3 sm:w-[230px] md:w-full flex items-center gap-3 justify-center'>
       {
-        socialdata.map((item,index)=>(
-            <div className={`w-[40px] h-[40px] flex items-center justify-center bg-[#f3f6f6] dark:bg-[#1d1d1d] ${item.class} hover:text-white text-[18px] rounded-lg p-2 hover:bg-blue-600 dark:hover:bg-blue-600` } key={index}> {item.icon} </div>
+        socialdata.map((item, index) => (
+          <div className={` sm:w-[40px] sm:h-[40px] flex items-center justify-center bg-[#f3f6f6] dark:bg-[#1d1d1d] ${item.class} hover:text-white text-[18px] rounded-lg p-2 hover:bg-blue-600 dark:hover:bg-blue-600`} key={index}> {item.icon} </div>
         ))
       }
     </div>

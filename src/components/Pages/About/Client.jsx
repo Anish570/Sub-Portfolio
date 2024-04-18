@@ -34,9 +34,9 @@ const Client = () => {
 
     ]
     return (
-
-        <div className='sm:absolute sm:left-0 '>
-            <div className="w-[100%] h-auto bg-[#f8fbfb] text-[#44566c] dark:bg-[#0d0d0d] dark:text-gray-400 flex flex-col gap-4 p-[30px]  ">
+        // bg-[#f8fbfb]
+        <>
+            <div className="space-y-[30px] w-[110%] h-[220px] bg-red-800  text-[#44566c] dark:bg-[#0d0d0d] dark:text-gray-400">
                 <div className="text-black dark:text-white text-[24px] text-center font-medium">
                     Client
                 </div>
@@ -55,12 +55,12 @@ const Client = () => {
                 </div>
 
             </div>
-            <div className='m-[20px] flex items-center justify-center bg-white dark:text-white dark:bg-black  text-black'>
+            <div className='mt-[20px] flex items-center justify-center bg-white dark:text-white dark:bg-black  text-black'>
                 <span>
                     © 2024 All Rights Reserved by Anishgtm.
                 </span>
             </div>
-        </div>
+        </>
     )
 }
 
