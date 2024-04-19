@@ -49,7 +49,7 @@ const About = () => {
             What I Do!
           </h3>
 
-          <div className='mt-[10px]'>
+          <div className='mt-[10px] sm:grid grid-cols-2 gap-x-8 gap-y-0'>
             {carddata.map((item, index) => (
               <DataCard key={index} data={item} />
             ))}
