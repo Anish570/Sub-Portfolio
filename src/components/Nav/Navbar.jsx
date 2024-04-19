@@ -2,7 +2,7 @@ import React from 'react'
 import ThemeToggle from './ThemeToggle'
 import MenuHamburger from './MenuHamburger'
 
-const Navbar = ({ className, showMenu, isMenuOpen }) => {
+const Navbar = ({ className }) => {
   return (
     <div className={` flex items-center  justify-between ${className}`}>
       <div>
@@ -10,7 +10,8 @@ const Navbar = ({ className, showMenu, isMenuOpen }) => {
       </div>
       <div className={`w-[40%] sm:w-[20%] flex items-center justify-end`}>
         <ThemeToggle />
-        <MenuHamburger showMenu={showMenu} isMenuOpen={isMenuOpen} />
+        {/* showMenu={showMenu} isMenuOpen={isMenuOpen} */}
+        <MenuHamburger />
 
       </div>
     </div>

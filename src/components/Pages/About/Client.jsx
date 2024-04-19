@@ -38,7 +38,7 @@ const Client = () => {
                     Client
                 </div>
                 {/*   */}
-                <div className=" sm:h-[95px] flex sm:px-[30px] py-4  sm:gap-5 overflow-x-auto scrollbar-hide scroll-smooth">
+                <div className=" sm:h-[95px] flex sm:px-[30px] py-4  sm:gap-5 overflow-y-hidden  overflow-x-auto scrollbar-hide scroll-smooth">
                     {
                         imgsdata.map((item, index) => (
                             <div key={index} className="min-w-[30px] min-h-[30px] sm:min-h-[70px] sm:min-w-[70px] mx-[13px] sm:mx-[25px] " >
